@@ -28,6 +28,9 @@ class ViewController: UIViewController {
         
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
+        alertController.addAction(UIAlertAction(title: "this is the third button", style: .cancel, handler: nil))
+        
+        
         
         present(alertController, animated: true)
         
@@ -57,6 +60,11 @@ class ViewController: UIViewController {
         
         
     }
+    
+    @IBAction func unwindToViewController(_ unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
     
     
     
